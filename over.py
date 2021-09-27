@@ -5,8 +5,8 @@ class Employee:
         self.name = name
         self.salary = salary
 
-    def __mul__(self, other):
-        return self.salary * other.days
+    def __add__(self, other):
+        return self.salary + other.days
 
 class TimeSheet:
     def __init__(self, name, days):
@@ -16,4 +16,4 @@ class TimeSheet:
 e1 = Employee("bharathi", 1000)
 ts = TimeSheet("bharathi", 28)     
 
-print(e1 * ts)
+print(e1 + ts)
